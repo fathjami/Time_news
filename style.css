@@ -1,0 +1,82 @@
+*{
+    /*border: solid black;*/
+    box-sizing: border-box;
+}
+
+.title{
+    font-family: cursive;
+    text-align: center;
+    font-size: 50px;
+}
+
+.title-header{
+    grid-area: header;
+}
+.main-box{
+    display: grid;
+    grid-template-areas:
+            "header header header"
+            "nav-bar nav-bar nav-bar"
+            "sec-0 sec-1 sec-2"
+            "sec-3 sec-4 sec-4";
+}
+
+.nav-bar{
+    grid-area: nav-bar;
+    border: solid black 3px;
+}
+
+.link-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+    font-size: 30px;
+    color: gray;
+}
+.section-box-0{
+    grid-area: sec-0;
+    border-left: solid black 3px;
+    border-right: solid black 3px;
+    border-bottom: solid black 3px;
+}
+
+.section-box-1 {
+    grid-area: sec-1;
+    border-right: solid black 3px;
+    border-bottom: solid black 3px;
+}
+
+.section-box-2 {
+    grid-area: sec-2;
+    border-right: solid black 3px;
+    border-bottom: solid black 3px;
+}
+.section-box-3 {
+    grid-area: sec-3;
+    border-bottom: solid black 3px;
+    border-right: solid black 3px;
+    border-left: solid black 3px;
+}
+.section-box-4 {
+    grid-area: sec-4;
+    border-right: solid black 3px;
+    border-bottom: solid black 3px;
+}
+
+.sec-title{
+    font-size:  25px;
+    font-family: "Arial Hebrew Scholar";
+    text-align: center;
+    margin : auto auto;
+}
+
+.sec-paragraph{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.sec-img{
+    display: block;
+    margin: 0 auto;
+}
